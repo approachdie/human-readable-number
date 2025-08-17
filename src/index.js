@@ -1,12 +1,13 @@
 module.exports = function toReadable(number) {
   let result = '';
+  let n = number;
 
   if (number === 0) {
     return 'zero';
   }
 
   if (number >= 100) {
-    const hundred = Math.floor(number / 100);
+    const hundred = Math.floor(n / 100);
     if (hundred === 1) {
       result += 'one hundred ';
     } else if (hundred === 2) {
@@ -26,11 +27,11 @@ module.exports = function toReadable(number) {
     } else if (hundred === 9) {
       result += 'nine hundred ';
     }
-    number %= 100;
+    n %= 100;
   }
 
   if (number >= 20) {
-    const tens = Math.floor(number / 10);
+    const tens = Math.floor(n / 10);
     if (tens === 2) {
       result += 'twenty ';
     } else if (tens === 3) {
@@ -48,7 +49,7 @@ module.exports = function toReadable(number) {
     } else if (tens === 9) {
       result += 'ninety ';
     }
-    number %= 10;
+    n %= 10;
   }
 
   if (number > 0) {
