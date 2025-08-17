@@ -6,7 +6,7 @@ module.exports = function toReadable(number) {
     return 'zero';
   }
 
-  if (number >= 100) {
+  if (n >= 100) {
     const hundred = Math.floor(n / 100);
     if (hundred === 1) {
       result += 'one hundred ';
@@ -30,7 +30,7 @@ module.exports = function toReadable(number) {
     n %= 100;
   }
 
-  if (number >= 20) {
+  if (n >= 20) {
     const tens = Math.floor(n / 10);
     if (tens === 2) {
       result += 'twenty ';
@@ -52,44 +52,44 @@ module.exports = function toReadable(number) {
     n %= 10;
   }
 
-  if (number > 0) {
-    if (number === 1) {
+  if (n > 0) {
+    if (n === 1) {
       result += 'one';
-    } else if (number === 2) {
+    } else if (n === 2) {
       result += 'two';
-    } else if (number === 3) {
+    } else if (n === 3) {
       result += 'three';
-    } else if (number === 4) {
+    } else if (n === 4) {
       result += 'four';
-    } else if (number === 5) {
+    } else if (n === 5) {
       result += 'five';
-    } else if (number === 6) {
+    } else if (n === 6) {
       result += 'six';
-    } else if (number === 7) {
+    } else if (n === 7) {
       result += 'seven';
-    } else if (number === 8) {
+    } else if (n === 8) {
       result += 'eight';
-    } else if (number === 9) {
+    } else if (n === 9) {
       result += 'nine';
-    } else if (number === 10) {
+    } else if (n === 10) {
       result += 'ten';
-    } else if (number === 11) {
+    } else if (n === 11) {
       result += 'eleven';
-    } else if (number === 12) {
+    } else if (n === 12) {
       result += 'twelve';
-    } else if (number === 13) {
+    } else if (n === 13) {
       result += 'thirteen';
-    } else if (number === 14) {
+    } else if (n === 14) {
       result += 'fourteen';
-    } else if (number === 15) {
+    } else if (n === 15) {
       result += 'fifteen';
-    } else if (number === 16) {
+    } else if (n === 16) {
       result += 'sixteen';
-    } else if (number === 17) {
+    } else if (n === 17) {
       result += 'seventeen';
-    } else if (number === 18) {
+    } else if (n === 18) {
       result += 'eighteen';
-    } else if (number === 19) {
+    } else if (n === 19) {
       result += 'nineteen';
     }
   }
